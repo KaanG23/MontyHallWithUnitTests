@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MontyHall
 {
@@ -47,7 +45,7 @@ namespace MontyHall
             var gameModel = new GameModel
             {
                 Doors = new List<Prizes>
-                {   
+                {
                     Prizes.Car,
                     Prizes.Goat,
                     Prizes.Goat
@@ -83,7 +81,7 @@ namespace MontyHall
             }
             else
             {
-                result.WinsChangingDoorPercent = (decimal)result.WinsNotChangingDoor / gameSettings.UserInputNumberOfGames * 100;
+                result.WinsNotChangingDoorPercent = (decimal)result.WinsNotChangingDoor / gameSettings.UserInputNumberOfGames * 100;
                 Console.WriteLine($"Win percentage when not changing door: {result.WinsNotChangingDoorPercent:F}%");
                 Console.WriteLine($"Wins when not changing door: {result.WinsNotChangingDoor}");
             }

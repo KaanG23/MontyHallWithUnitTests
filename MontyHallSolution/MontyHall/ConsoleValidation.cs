@@ -1,9 +1,5 @@
 ﻿using MontyHall.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MontyHall
 {
@@ -24,9 +20,7 @@ namespace MontyHall
                 Console.WriteLine("Invalid input type a number, 1 or greater");
             }
 
-
             Console.WriteLine("Do you want to change the door? Answer with either yes or no: ");
-
             while (true)
             {
                 var userInput = Console.ReadLine();
