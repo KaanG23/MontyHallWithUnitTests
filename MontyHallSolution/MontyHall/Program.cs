@@ -6,7 +6,14 @@ namespace MontyHall
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            do
+            {
+                GameSimulator gameSimulator = new GameSimulator();
+                gameSimulator.SimulateGame();
+
+                Console.WriteLine($"\nPress any key to run again");
+                Console.ReadLine();
+            } while (true);
         }
     }
 }
